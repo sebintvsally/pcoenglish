@@ -6,10 +6,10 @@
 <title>정세빈 원장 | 프코잉글리시</title>
 <meta name="description" content="프코잉글리시 정세빈 원장(Teacher Sally) · 유치부부터 고등부까지 1:1 프리미엄 영어 코칭">
 <meta property="og:type" content="profile">
-<meta property="og:url" content="https://sebintvsally.github.io/pcoenglish/">
+<meta property="og:url" content="https://pcoenglish.vercel.app/">
 <meta property="og:title" content="정세빈 원장 · 프코잉글리시">
 <meta property="og:description" content="Teacher Sally · 유치·초·중·고 1:1 프리미엄 영어 코칭 · 상담 010-9317-1573">
-<meta property="og:image" content="https://sebintvsally.github.io/pcoenglish/assets/og.jpg">
+<meta property="og:image" content="https://pcoenglish.vercel.app/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -55,6 +55,7 @@
   .brand{flex:1}
   .brand b{display:block;font-family:var(--serif);font-weight:700;font-size:16px;color:var(--navy);letter-spacing:.5px}
   .brand span{font-family:var(--display);font-style:italic;font-size:15px;color:var(--rose)}
+  .brand span.ko{font-family:Pretendard,sans-serif;font-style:normal;font-size:12px;letter-spacing:1.5px;font-weight:500}
   .share-top{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--hair);background:#fff}
   .share-top svg{width:18px;height:18px;stroke:var(--navy);fill:none;stroke-width:1.7}
 
@@ -131,12 +132,15 @@
   /* contact */
   .rows{margin-top:8px}
   .row{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--hair)}
-  .row:last-of-type{border-bottom:0}
+  .rows>.row:last-child{border-bottom:0}
   .ic{flex:none;width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:var(--porcelain);border:1px solid var(--hair)}
   .ic svg{width:18px;height:18px;stroke:var(--cobalt);fill:none;stroke-width:1.6}
   .row div{flex:1;min-width:0}
   .row small{display:block;font-size:11px;color:#9aa1b8;letter-spacing:.3px}
   .row strong{display:block;font-size:15px;font-weight:600;color:var(--ink);word-break:break-all}
+  .insta .iqr{flex:none;width:76px;height:76px;padding:7px;border-radius:14px;background:#fff;border:1px solid var(--hair);box-shadow:0 8px 18px -12px rgba(22,35,92,.5)}
+  .insta .iqr img{width:100%;height:100%;display:block}
+  .insta em{display:block;margin-top:3px;font-style:normal;font-size:11.5px;color:var(--muted);line-height:1.4}
   .go{flex:none;font-size:12px;font-weight:600;color:var(--cobalt);background:var(--ice);border-radius:999px;padding:7px 12px}
   .todo{color:#c0392b !important}
   .save{margin-top:14px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;padding:16px;border-radius:16px;font-weight:600;font-size:15px;
@@ -220,9 +224,9 @@
     <a class="q primary" href="tel:01093171573">
       <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
       전화 상담<small>010-9317-1573</small></a>
-    <a class="q" href="#KAKAO_URL">
-      <svg viewBox="0 0 24 24"><path d="M12 4C7 4 3 7.1 3 11c0 2.5 1.7 4.7 4.2 6L6.5 20l3.6-2.3c.6.1 1.2.1 1.9.1 5 0 9-3.1 9-7s-4-7-9-6.8z"/></svg>카톡 문의</a>
-    <a class="q" href="#MAP_URL">
+    <a class="q" href="https://www.instagram.com/teacher_sally_/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg>인스타그램</a>
+    <a class="q" href="https://map.naver.com/p/search/%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%9B%85%EC%B2%9C%EB%8F%99" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>오시는 길</a>
   </nav>
 
@@ -256,15 +260,13 @@
       <div class="row">
         <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
         <div><small>Phone</small><strong>010-9317-1573</strong></div><a class="go" href="tel:01093171573">전화</a></div>
-      <div class="row">
-        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 4C7 4 3 7.1 3 11c0 2.5 1.7 4.7 4.2 6L6.5 20l3.6-2.3c.6.1 1.2.1 1.9.1 5 0 9-3.1 9-7s-4-7-9-6.8z"/></svg></span>
-        <div><small>KakaoTalk</small><strong class="todo">[카카오 채널/오픈채팅 주소]</strong></div><a class="go" href="#KAKAO_URL">문의</a></div>
-      <div class="row">
-        <span class="ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></svg></span>
-        <div><small>Instagram</small><strong>@teacher_sally_</strong></div><a class="go" href="https://www.instagram.com/teacher_sally_/" target="_blank" rel="noopener">보기</a></div>
+      <a class="row insta" href="https://www.instagram.com/teacher_sally_/" target="_blank" rel="noopener">
+        <span class="iqr"><img src="assets/qr-insta.svg" alt="인스타그램 QR코드"></span>
+        <div><small>Instagram</small><strong>@teacher_sally_</strong><em>스캔하거나 눌러서 수업 일상을 만나보세요</em></div>
+        <span class="go">팔로우</span></a>
       <div class="row">
         <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
-        <div><small>Address</small><strong class="todo">[학원 주소]</strong></div><a class="go" href="#MAP_URL">지도</a></div>
+        <div><small>Address</small><strong>전남 여수시 웅천동</strong></div><a class="go" href="https://map.naver.com/p/search/%EC%A0%84%EB%82%A8%20%EC%97%AC%EC%88%98%EC%8B%9C%20%EC%9B%85%EC%B2%9C%EB%8F%99" target="_blank" rel="noopener">지도</a></div>
     </div>
     <button class="save" id="save">
       <svg viewBox="0 0 24 24"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>연락처 저장하기</button>
@@ -299,7 +301,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-  const URL_CARD = 'https://sebintvsally.github.io/pcoenglish/';
+  const URL_CARD = 'https://pcoenglish.vercel.app/';
   const toast = msg => { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('on'); setTimeout(() => t.classList.remove('on'), 1800); };
 
   // 영상
@@ -325,7 +327,7 @@
   // 연락처 저장 (vCard)
   document.getElementById('save').onclick = () => {
     const v = ['BEGIN:VCARD','VERSION:3.0','N:정;세빈;;;','FN:정세빈 원장 (Teacher Sally)','ORG:프코잉글리시','TITLE:원장',
-      'TEL;TYPE=CELL:010-9317-1573','URL:' + URL_CARD,'X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/teacher_sally_/','END:VCARD'].join('\r\n');
+      'TEL;TYPE=CELL:010-9317-1573','ADR;TYPE=WORK:;;웅천동;여수시;전라남도;;대한민국','URL:' + URL_CARD,'X-SOCIALPROFILE;TYPE=instagram:https://www.instagram.com/teacher_sally_/','END:VCARD'].join('\r\n');
     const a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([v], { type: 'text/vcard;charset=utf-8' }));
     a.download = '정세빈_원장.vcf'; a.click();
